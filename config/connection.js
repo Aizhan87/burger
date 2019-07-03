@@ -13,8 +13,7 @@ if (process.env.JAWSDB_URL) {
     })
 };
 
-connection.connect();
-module.exports = connection;
+
 
 connection.connect(function (err) {
     if (err) {
