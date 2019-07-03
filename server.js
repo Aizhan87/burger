@@ -4,6 +4,24 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
+var mysql = require("mysql");
+var connection;
+
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+    connection = mysql.createConnection({
+        host: "k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        user: "mqu2owd0i7j7mdno",
+        password: "john1kotx6xiirpm",
+        port: "3306",
+        database: "r39wcqgbmbydentt"
+    })
+};
+
+connection.connect();
+module.exports = connection;
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
