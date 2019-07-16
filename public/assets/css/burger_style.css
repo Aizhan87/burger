@@ -1,5 +1,9 @@
 body{
-    background-color:rgb(192, 113, 9);
+    background-color:rgb(192, 113, 9);background: url("/assets/img/classic-burgers-u.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
 }
 
 .container{

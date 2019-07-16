@@ -9,8 +9,8 @@
         {{#each burgers}}
         {{#unless devoured}}
         <ul>
-            <li> <textarea id="textarea1"
-                    class="materialize-textarea center-align">{{burger_name}}{{burgers devoured=false}}</textarea>
+            <li> <textarea id="textarea1" class="materialize-textarea center-align"
+                    style="background-color:rgb(154, 219, 154)">{{burger_name}}{{burgers devoured=false}}</textarea>
                 <a class="waves-effect waves-light btn-small change-devour" style="position: absolute" data-id="{{id}}"
                     data-newdevour="{{newdevour}}">
                     {{#if devoured}}Devoured!{{else}}Devour it!{{/if}}
@@ -24,7 +24,8 @@
         {{#if devoured}}
         <ul>
             <li>
-                <textarea id="textarea1" class="materialize-textarea center-align">{{burger_name}}</textarea>
+                <textarea id="textarea1" class="materialize-textarea center-align"
+                    style="background-color: rgb(250, 140, 140)">{{burger_name}}</textarea>
             </li>
         </ul>
         {{/if}}
